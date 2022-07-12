@@ -36,7 +36,7 @@ const productsSlice = createSlice({
     }
 });
 
-const { reducer: productReducer, actions } = productsSlice;
+const { reducer: productsReducer, actions } = productsSlice;
 const {
     productsRequested,
     productsReceived,
@@ -97,4 +97,4 @@ export const removeProduct = (productId) => async (dispatch) => {
 
 export const getProductsList = (state) => state.products.entities;
 
-export default productReducer;
+export default productsReducer;
